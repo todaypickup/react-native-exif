@@ -186,7 +186,7 @@ public class RealPathUtil {
 	public static boolean isFileProviderUri(@NonNull final Context context,
 	                                        @NonNull final Uri uri) {
 		final String packageName = context.getPackageName();
-		final String authority = new StringBuilder(packageName).append(".provider").toString();
+		final String authority = new StringBuilder(packageName).toString();
 		return authority.equals(uri.getAuthority());
 	}
 
